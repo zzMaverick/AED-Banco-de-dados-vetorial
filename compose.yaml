@@ -3,23 +3,48 @@ services:
     build: .
     environment:
       ESTADO_DIR: /estado
-      # Variável para sua aplicação saber onde o Qdrant está:
-      QDRANT_HOST: http://qdrant:6333 
+      QDRANT_HOST: http://qdrant:6333
     volumes:
       - estado_vetorial:/estado
-      - ./dados:/app/dados:ro
+      - ./dados:/app/dados
       - ./evidencias:/app/evidencias
     depends_on:
       - qdrant
 
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    environment:
+      ESTADO_DIR: /estado
+      QDRANT_HOST: http://qdrant:6333
+      CORS_ORIGINS: "*"
+    ports:
+      - "8000:8000"
+    volumes:
+      - estado_vetorial:/estado
+      - ./dados:/app/dados
+      - ./evidencias:/app/evidencias
+    depends_on:
+      - qdrant
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
   qdrant:
     image: qdrant/qdrant:latest
     ports:
-      - "6333:6333" # Porta para acessar o Dashboard no seu navegador local
-      - "6334:6334" # Porta gRPC (se sua aplicação usar)
+      - "6333:6333"
+      - "6334:6334"
     volumes:
       - qdrant_data:/qdrant/storage
 
 volumes:
   estado_vetorial:
-  qdrant_data: # Volume para não perder os dados do Qdrant ao reiniciar
+  qdrant_data:

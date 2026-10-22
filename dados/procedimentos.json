@@ -202,5 +202,22 @@
         "texto": "O financeiro verifica as informações bancárias por um canal de confirmação independente. Depois da validação, o setor de suprimentos libera o cadastro para uso nos pedidos. Uma alteração bancária posterior exige nova conferência antes de qualquer pagamento."
       }
     ]
+  },
+  {
+    "id": "PR015",
+    "titulo": "Reestabelecer conexão com wifi",
+    "area": "Tecnologia",
+    "fonte": "Interna",
+    "versao": "1.0",
+    "secoes": [
+      {
+        "titulo": "Primeiro passo",
+        "texto": "Abrir configs"
+      },
+      {
+        "titulo": "Segundo passo",
+        "texto": "Religar a rede wifi"
+      }
+    ]
   }
 ]

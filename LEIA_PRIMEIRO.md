@@ -11,7 +11,8 @@ Exemplo: perguntar **"Qual é o procedimento para aprovar uma compra emergencial
 - Base fictícia de 12 procedimentos da Empresa Horizonte, dividida em 24 trechos.
 - Consulta Top-k, filtro por área aplicado no Qdrant e limite mínimo de similaridade.
 - Fonte, versão, seção e identificador em cada resultado.
-- Persistência entre execuções e identificação da coleção pelo conteúdo da base, modelo, versão do FastEmbed e configuração de fragmentação.
+- Persistência entre execuções em uma coleção de nome estável, reconciliada pelo hash de cada documento.
+- API HTTP em FastAPI (`api.py`) e interface React que gerenciam o acervo: criar, editar, excluir e reindexar documentos, mantendo o JSON e o índice consistentes.
 - Avaliação de 12 perguntas com documento esperado e 4 perguntas fora do domínio.
 - Oito testes de integração executados com o modelo e o banco reais.
 
@@ -90,7 +91,21 @@ O modo local faz busca exata nesta pequena base. A demonstração não mede HNSW
 
 ## Alterar os procedimentos
 
-Edite `dados/procedimentos.json`, mantendo os campos e IDs únicos. A execução seguinte cria uma coleção com assinatura correspondente à nova base. O original fica na coleção anterior e não participa das novas consultas. Isso evita misturar vetores das versões da base. Coleções antigas ocupam espaço e exigiriam uma política de limpeza em uso continuado.
+Use a página **Documentos** da interface (criar, editar, excluir e reindexar) ou o `dados/procedimentos.json`, mantendo os campos e IDs únicos. O arquivo JSON é a fonte da verdade e o Qdrant é o índice derivado: cada operação grava o arquivo de forma atômica (`arquivo temporário + rename`) e atualiza somente os vetores do documento afetado, sob um lock de processo. Se a escrita no índice falhar, o arquivo não é alterado.
+
+A coleção tem nome estável, `procedimentos`, em vez do nome derivado do hash do conteúdo. Na inicialização o serviço remove coleções antigas no formato `procedimentos_<hash>` e reconcilia o índice pelo hash de cada documento: órfãos são excluídos, alterados são reindexados e novos são inseridos. Não sobra coleção órfã após edições.
+
+Reiniciar os serviços não perde documentos: `./dados` é montado como gravável e o índice fica no volume `qdrant_data`. Para forçar a reconstrução completa do índice a partir do JSON:
+
+```powershell
+docker compose run --rm app indexar
+```
+
+Com a pilha no ar, o mesmo efeito pelo endpoint `POST /api/reindexar` (um único documento: `POST /api/documentos/{id}/reindexar`):
+
+```powershell
+curl -X POST http://localhost:8000/api/reindexar
+```
 
 O formato de entrada implementado é JSON. PDFs, DOCX, OCR e pastas de documentos exigiriam uma etapa de extração e normalização antes de alimentar esse formato. O corpus de políticas não foi extraído dos anexos: os anexos são a fundamentação teórica, e os procedimentos são a base fictícia criada para a aplicação prática.
 

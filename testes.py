@@ -9,7 +9,6 @@ from app import Busca, ROOT, fragmentar
 class Integracao(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        # Usa o cache baixado pela execução normal, mas um banco isolado.
         import os
         cls.temp = tempfile.TemporaryDirectory()
         cls.estado = Path(cls.temp.name)
