@@ -1,0 +1,84 @@
+[
+  {
+    "id": "Q01",
+    "pergunta": "Qual é o procedimento para aprovar uma compra emergencial?",
+    "esperado": "PR001"
+  },
+  {
+    "id": "Q02",
+    "pergunta": "Paguei o hotel da viagem de trabalho do meu bolso. Como recebo o dinheiro de volta?",
+    "esperado": "PR002"
+  },
+  {
+    "id": "Q03",
+    "pergunta": "Esqueci minha senha e não consigo entrar no sistema.",
+    "esperado": "PR003"
+  },
+  {
+    "id": "Q04",
+    "pergunta": "Quero trabalhar de casa e acessar a rede do escritório.",
+    "esperado": "PR004"
+  },
+  {
+    "id": "Q05",
+    "pergunta": "Como marco minhas férias com o chefe?",
+    "esperado": "PR005"
+  },
+  {
+    "id": "Q06",
+    "pergunta": "Onde posso agendar um espaço para reunir minha equipe?",
+    "esperado": "PR006"
+  },
+  {
+    "id": "Q07",
+    "pergunta": "Mandei imprimir mas nenhuma folha saiu. O que verificar?",
+    "esperado": "PR007"
+  },
+  {
+    "id": "Q08",
+    "pergunta": "Compartilhei sem querer um documento da empresa com a pessoa errada.",
+    "esperado": "PR008"
+  },
+  {
+    "id": "Q09",
+    "pergunta": "O aparelho que refrigera a sala parou de funcionar.",
+    "esperado": "PR009"
+  },
+  {
+    "id": "Q10",
+    "pergunta": "Vai entrar um funcionário novo. Quem prepara o computador e os acessos?",
+    "esperado": "PR010"
+  },
+  {
+    "id": "Q11",
+    "pergunta": "Acabou o papel de uso diário. Como reabastecer o estoque?",
+    "esperado": "PR011",
+    "area": "Compras"
+  },
+  {
+    "id": "Q12",
+    "pergunta": "Quero incluir uma empresa nova para fornecer produtos.",
+    "esperado": "PR012",
+    "area": "Compras"
+  },
+  {
+    "id": "Q13",
+    "pergunta": "Qual é a receita de bolo de cenoura com cobertura de chocolate?",
+    "esperado": null
+  },
+  {
+    "id": "Q14",
+    "pergunta": "Quem venceu a Copa do Mundo de futebol de 1994?",
+    "esperado": null
+  },
+  {
+    "id": "Q15",
+    "pergunta": "Qual a distância entre a Terra e o planeta Júpiter?",
+    "esperado": null
+  },
+  {
+    "id": "Q16",
+    "pergunta": "Como plantar orquídeas em um vaso?",
+    "esperado": null
+  }
+]

@@ -1,0 +1,20 @@
+/workspace/scratch/47c91fa1dd19/entrega/Consulta_Procedimentos_Vetoriais/app.py:70: UserWarning: The model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 now uses mean pooling instead of CLS embedding. In order to preserve the previous behaviour, consider either pinning fastembed version to 0.5.1 or using `add_custom_model` functionality.
+  self.modelo = TextEmbedding(MODEL, cache_dir=str(estado / "modelos"), threads=2)
+
+Pergunta: Qual é o procedimento para aprovar uma compra emergencial?
+Filtro por área: todas
+Status: trechos_encontrados | Tempo da consulta: 8.6 ms
+
+1. Aquisição urgente de materiais | cosseno 0.5388
+Fonte: Empresa Horizonte fictícia PR001, versão 1.0, seção Abertura da solicitação (PR001-S1-T1)
+Quando a falta de um material puder interromper a operação, o solicitante deverá abrir uma requisição excepcional no portal de suprimentos. Informar o item, a quantidade, o motivo da urgência e o impacto da indisponibilidade. Anexar uma estimativa de preço. A urgência não dispensa o registro da justificativa.
+
+2. Restituição de despesas de viagem | cosseno 0.4792
+Fonte: Empresa Horizonte fictícia PR002, versão 1.0, seção Validação e pagamento (PR002-S2-T1)
+O gestor responsável pela viagem verifica a finalidade das despesas. O financeiro confere os comprovantes e devolve o pedido quando faltar informação. Após a validação, a restituição é programada na conta cadastrada pelo colaborador. Consultar a situação pelo protocolo da prestação de contas.
+
+3. Aquisição urgente de materiais | cosseno 0.4762
+Fonte: Empresa Horizonte fictícia PR001, versão 1.0, seção Autorização da aquisição (PR001-S2-T1)
+A requisição excepcional deve ser validada pelo gestor da área solicitante e encaminhada ao setor de suprimentos. O setor financeiro confirma a disponibilidade de orçamento. Somente depois dessas duas validações o setor de suprimentos pode emitir a autorização ao fornecedor. O solicitante acompanha as aprovações pelo número da requisição.
+
+A pontuação mede proximidade vetorial e não é percentual de certeza.

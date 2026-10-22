@@ -1,0 +1,206 @@
+[
+  {
+    "id": "PR001",
+    "titulo": "Aquisição urgente de materiais",
+    "area": "Compras",
+    "fonte": "Empresa Horizonte fictícia PR001",
+    "versao": "1.0",
+    "secoes": [
+      {
+        "titulo": "Abertura da solicitação",
+        "texto": "Quando a falta de um material puder interromper a operação, o solicitante deverá abrir uma requisição excepcional no portal de suprimentos. Informar o item, a quantidade, o motivo da urgência e o impacto da indisponibilidade. Anexar uma estimativa de preço. A urgência não dispensa o registro da justificativa."
+      },
+      {
+        "titulo": "Autorização da aquisição",
+        "texto": "A requisição excepcional deve ser validada pelo gestor da área solicitante e encaminhada ao setor de suprimentos. O setor financeiro confirma a disponibilidade de orçamento. Somente depois dessas duas validações o setor de suprimentos pode emitir a autorização ao fornecedor. O solicitante acompanha as aprovações pelo número da requisição."
+      }
+    ]
+  },
+  {
+    "id": "PR002",
+    "titulo": "Restituição de despesas de viagem",
+    "area": "Financeiro",
+    "fonte": "Empresa Horizonte fictícia PR002",
+    "versao": "1.0",
+    "secoes": [
+      {
+        "titulo": "Documentação da despesa",
+        "texto": "O colaborador que utilizou recursos próprios em um deslocamento a serviço deve registrar a prestação de contas no portal financeiro. Anexar os comprovantes de hospedagem, transporte e alimentação, informar as datas e relacionar cada gasto à atividade realizada."
+      },
+      {
+        "titulo": "Validação e pagamento",
+        "texto": "O gestor responsável pela viagem verifica a finalidade das despesas. O financeiro confere os comprovantes e devolve o pedido quando faltar informação. Após a validação, a restituição é programada na conta cadastrada pelo colaborador. Consultar a situação pelo protocolo da prestação de contas."
+      }
+    ]
+  },
+  {
+    "id": "PR003",
+    "titulo": "Recuperação de credenciais de acesso",
+    "area": "Tecnologia",
+    "fonte": "Empresa Horizonte fictícia PR003",
+    "versao": "1.0",
+    "secoes": [
+      {
+        "titulo": "Redefinição da credencial",
+        "texto": "Se o usuário esquecer a senha corporativa, deve abrir a página de autenticação e selecionar Recuperar acesso. O sistema envia um link temporário ao endereço alternativo cadastrado. O usuário define uma nova senha e encerra as sessões antigas. A equipe de suporte não solicita que a senha seja enviada por mensagem."
+      },
+      {
+        "titulo": "Ausência do endereço alternativo",
+        "texto": "Se o usuário não tiver acesso ao endereço alternativo, deverá abrir um chamado na central de serviços para validação da identidade. Depois da conferência, o suporte libera um novo procedimento de recuperação. O usuário nunca deve compartilhar sua credencial com colegas."
+      }
+    ]
+  },
+  {
+    "id": "PR004",
+    "titulo": "Conexão remota à rede corporativa",
+    "area": "Tecnologia",
+    "fonte": "Empresa Horizonte fictícia PR004",
+    "versao": "1.0",
+    "secoes": [
+      {
+        "titulo": "Acesso externo com VPN",
+        "texto": "Para utilizar os sistemas internos fora do escritório, o colaborador solicita habilitação de acesso remoto na central de serviços. Após a validação do gestor, a equipe técnica instala o cliente VPN no equipamento corporativo e habilita a autenticação em dois fatores."
+      },
+      {
+        "titulo": "Falha na conexão",
+        "texto": "Se o túnel VPN não conectar, conferir a disponibilidade da internet e a validade do segundo fator. Registrar o horário e a mensagem de erro em um chamado. Evitar repetidas tentativas quando a conta estiver bloqueada. O suporte verifica o certificado e a configuração do cliente."
+      }
+    ]
+  },
+  {
+    "id": "PR005",
+    "titulo": "Programação do período de descanso",
+    "area": "Pessoas",
+    "fonte": "Empresa Horizonte fictícia PR005",
+    "versao": "1.0",
+    "secoes": [
+      {
+        "titulo": "Solicitação do afastamento",
+        "texto": "O colaborador registra no portal de pessoas as datas pretendidas para suas férias. O gestor verifica a cobertura das atividades e aprova ou propõe outro período. A equipe de pessoas confere o saldo disponível e formaliza a programação."
+      },
+      {
+        "titulo": "Alteração do período",
+        "texto": "Se precisar mudar as datas já aprovadas, o colaborador deve solicitar a alteração no mesmo protocolo. O gestor reavalia a cobertura da equipe e a área de pessoas verifica a possibilidade de mudança. A alteração somente vale depois da confirmação registrada no portal."
+      }
+    ]
+  },
+  {
+    "id": "PR006",
+    "titulo": "Reserva de ambiente para reunião",
+    "area": "Administrativo",
+    "fonte": "Empresa Horizonte fictícia PR006",
+    "versao": "1.0",
+    "secoes": [
+      {
+        "titulo": "Agendamento de sala",
+        "texto": "Para reunir a equipe em uma sala compartilhada, consultar a agenda dos ambientes no portal administrativo. Selecionar a data, o horário, a quantidade de participantes e os recursos necessários. A solicitação é encaminhada ao responsável pelo espaço para confirmação."
+      },
+      {
+        "titulo": "Cancelamento do agendamento",
+        "texto": "Quando o encontro não for mais necessário, cancelar a reserva no portal para liberar o horário a outras equipes. Se o ambiente estiver indisponível, verificar uma sala alternativa. Não ocupar um espaço cuja reserva esteja confirmada para outro solicitante."
+      }
+    ]
+  },
+  {
+    "id": "PR007",
+    "titulo": "Falha em equipamento de impressão",
+    "area": "Tecnologia",
+    "fonte": "Empresa Horizonte fictícia PR007",
+    "versao": "1.0",
+    "secoes": [
+      {
+        "titulo": "Diagnóstico inicial",
+        "texto": "Quando a impressora não produzir os documentos enviados, conferir o papel, a conexão e a fila de impressão. Cancelar trabalhos duplicados. Se houver atolamento, seguir as instruções do equipamento e evitar puxar o papel com força."
+      },
+      {
+        "titulo": "Acionamento do suporte",
+        "texto": "Se a falha continuar, abrir chamado informando o patrimônio do equipamento, a mensagem exibida e o andar de instalação. O suporte verifica o driver e a comunicação com o servidor. Não instalar programas obtidos de fontes desconhecidas para tentar corrigir o problema."
+      }
+    ]
+  },
+  {
+    "id": "PR008",
+    "titulo": "Comunicação de exposição de informações",
+    "area": "Seguranca",
+    "fonte": "Empresa Horizonte fictícia PR008",
+    "versao": "1.0",
+    "secoes": [
+      {
+        "titulo": "Registro do incidente",
+        "texto": "Ao perceber que um arquivo interno foi enviado a um destinatário indevido ou ficou acessível fora da equipe autorizada, comunicar imediatamente o canal de segurança da informação. Informar o horário, o tipo de arquivo e o meio de compartilhamento. Preservar os registros necessários para análise."
+      },
+      {
+        "titulo": "Contenção inicial",
+        "texto": "O responsável pelo incidente orienta a remoção do compartilhamento e o bloqueio do acesso indevido. O colaborador não deve apagar os registros antes dessa orientação. A equipe de segurança avalia o alcance do evento e coordena as providências com as áreas responsáveis."
+      }
+    ]
+  },
+  {
+    "id": "PR009",
+    "titulo": "Conserto de climatização predial",
+    "area": "Administrativo",
+    "fonte": "Empresa Horizonte fictícia PR009",
+    "versao": "1.0",
+    "secoes": [
+      {
+        "titulo": "Solicitação de manutenção",
+        "texto": "Se o ar condicionado parar de resfriar ou apresentar ruído anormal, registrar uma solicitação de manutenção predial. Informar o prédio, a sala, o número do patrimônio e o sintoma observado. Não desmontar o equipamento nem alterar a instalação elétrica."
+      },
+      {
+        "titulo": "Atendimento técnico",
+        "texto": "A equipe de infraestrutura verifica a prioridade e agenda a visita técnica. Quando houver risco elétrico, o ambiente deve ser isolado conforme orientação da equipe responsável. A conclusão do conserto é registrada no protocolo de manutenção."
+      }
+    ]
+  },
+  {
+    "id": "PR010",
+    "titulo": "Integração de novo colaborador",
+    "area": "Pessoas",
+    "fonte": "Empresa Horizonte fictícia PR010",
+    "versao": "1.0",
+    "secoes": [
+      {
+        "titulo": "Preparação da chegada",
+        "texto": "Antes do primeiro dia de trabalho, o gestor informa à área de pessoas a função, a equipe e a data de entrada do novo colaborador. A área de pessoas organiza a documentação e a apresentação das orientações internas."
+      },
+      {
+        "titulo": "Equipamento e permissões",
+        "texto": "O gestor abre a solicitação de computador e das permissões necessárias à função. A tecnologia prepara o equipamento e os acessos depois da validação dos responsáveis. Na chegada, o colaborador recebe as instruções de uso e confirma o recebimento do material."
+      }
+    ]
+  },
+  {
+    "id": "PR011",
+    "titulo": "Reposição rotineira de materiais",
+    "area": "Compras",
+    "fonte": "Empresa Horizonte fictícia PR011",
+    "versao": "1.0",
+    "secoes": [
+      {
+        "titulo": "Consulta ao almoxarifado",
+        "texto": "Antes de pedir novos materiais de uso cotidiano, consultar o saldo no almoxarifado. Quando o item estiver disponível, registrar a retirada com a quantidade e o centro de custo. Quando o saldo estiver baixo, abrir uma solicitação de reposição normal."
+      },
+      {
+        "titulo": "Planejamento da reposição",
+        "texto": "O setor de suprimentos agrupa as necessidades recorrentes para planejar a reposição. Informar o consumo estimado e a previsão de uso. A solicitação rotineira segue o calendário de atendimento do setor e não deve utilizar o fluxo de aquisição excepcional sem justificativa operacional."
+      }
+    ]
+  },
+  {
+    "id": "PR012",
+    "titulo": "Cadastro de novo fornecedor",
+    "area": "Compras",
+    "fonte": "Empresa Horizonte fictícia PR012",
+    "versao": "1.0",
+    "secoes": [
+      {
+        "titulo": "Documentação cadastral",
+        "texto": "Para incluir uma empresa fornecedora no cadastro, o solicitante encaminha os dados de identificação, contato comercial e documentação solicitada pelo setor de suprimentos. O setor confere os dados e verifica se já existe registro para evitar duplicidade."
+      },
+      {
+        "titulo": "Validação do cadastro",
+        "texto": "O financeiro verifica as informações bancárias por um canal de confirmação independente. Depois da validação, o setor de suprimentos libera o cadastro para uso nos pedidos. Uma alteração bancária posterior exige nova conferência antes de qualquer pagamento."
+      }
+    ]
+  }
+]

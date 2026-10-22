@@ -1,0 +1,15 @@
+/workspace/scratch/47c91fa1dd19/entrega/Consulta_Procedimentos_Vetoriais/app.py:70: UserWarning: The model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 now uses mean pooling instead of CLS embedding. In order to preserve the previous behaviour, consider either pinning fastembed version to 0.5.1 or using `add_custom_model` functionality.
+  self.modelo = TextEmbedding(MODEL, cache_dir=str(cache_modelo or estado / "modelos"), threads=2)
+test_01_consulta_semantica_com_vocabulario_diferente (__main__.Integracao.test_01_consulta_semantica_com_vocabulario_diferente) ... ok
+test_02_filtro_antes_da_busca (__main__.Integracao.test_02_filtro_antes_da_busca) ... ok
+test_03_area_inexistente_nao_retorna (__main__.Integracao.test_03_area_inexistente_nao_retorna) ... ok
+test_04_fonte_e_vetor_reais (__main__.Integracao.test_04_fonte_e_vetor_reais) ... ok
+test_05_pergunta_fora_do_dominio (__main__.Integracao.test_05_pergunta_fora_do_dominio) ... ok
+test_06_reindexacao_idempotente (__main__.Integracao.test_06_reindexacao_idempotente) ... ok
+test_07_persistencia_apos_reabrir (__main__.Integracao.test_07_persistencia_apos_reabrir) ... ok
+test_08_validacao_e_fragmentacao (__main__.Integracao.test_08_validacao_e_fragmentacao) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 6.963s
+
+OK
