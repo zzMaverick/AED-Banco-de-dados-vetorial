@@ -72,7 +72,11 @@ class Busca:
                       "fastembed": version("fastembed"), "pipeline": "secoes-70-12-v1"}
         self.assinatura = hashlib.sha256(json.dumps(assinatura, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
         self.colecao = "procedimentos_" + self.assinatura[:16]
-        self.cliente = QdrantClient(path=str(estado / "qdrant"))
+        qdrant_host = os.environ.get(
+            "QDRANT_HOST",
+            "http://localhost:6333"
+        )
+        self.cliente = QdrantClient(url=qdrant_host)
         self.trechos = []
         for doc in self.documentos:
             for s, secao in enumerate(doc["secoes"], 1):
